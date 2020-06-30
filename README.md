@@ -1,6 +1,6 @@
 ## Gelia Form - Customizable Survey / Call Sheet
 
-This form should always save the customer's:
+This form should **always** save the customer's:
 - Business Name
 - Business Address
 - Name of Contact
@@ -12,6 +12,10 @@ This form should always save the customer's:
 This form will be used by Customer Service Professionals as they call customers. The form will save:
 - Date of call attempt
 - Time of call attempt
+    - **Note**
+        - Standard leads require 10 attempts
+        - Re-engagement leads require 6 attempts
+        - Specialty leads require 20 attempts
 - Result of call attempt
     - Voicemail
     - Not in
