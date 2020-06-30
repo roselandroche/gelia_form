@@ -1,6 +1,8 @@
 # Gelia Form - Customizable Survey / Call Sheet
 ## This form will be used by Customer Service Professionals as they call customers. 
 
+### Function
+
 This form should **always** save the customer's:
 - Business Name
 - Business Address
@@ -10,7 +12,7 @@ This form should **always** save the customer's:
     - Texting preferences
 - Email Address
 
-On all call attempts, the form will save:
+On **all** call attempts, the form will save:
 - Date of call attempt
 - Time of call attempt
     - **Note**
@@ -24,7 +26,7 @@ On all call attempts, the form will save:
     - No answer
     - Other
 
-On successful calls, the form will save:
+On **successful calls**, the form will save:
 - Desired product(s)
 - New or used
 - Would the customer like information on financing options
@@ -35,11 +37,11 @@ On successful calls, the form will save:
 - 3 optional survey questions (rotate every few months)
 - Additional notes
 
-## Motivation
+### Motivation
 
 Currently Professionals in this position rely on printed call sheets. These are inefficient to produce and to use, are easily lost or damaged, damaging to the environment, etc.
 
-## Tech Framework
+### Tech Framework
 
 - TBD
 
