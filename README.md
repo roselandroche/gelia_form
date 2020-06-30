@@ -52,9 +52,22 @@ On **active leads**, the form will save:
     - Utilities
     - Governmental
     - etc.
-- Desired attachment(s) for machine
+- Desired attachment(s)/part(s) for machine
 - Has the customer been in contact with a dealer in the past year (y/n)
 - Answers to 3 optional survey questions (rotate every few months)
+    - What communication would you prefer to receive from dealer?
+    - What form would you like to receive this communication?
+        - Email
+        - Regular mail
+        - Phone
+        - In person
+        - N/A
+    - How often do you want to receive this communication?
+        - Weekly
+        - Monthly
+        - Quarterly
+        - Semi-Annually
+        - Annually
 - Additional notes
 
 On **inactive leads**, the form will save:
