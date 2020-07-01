@@ -1,6 +1,21 @@
 # Gelia Form - Customizable Survey / Call Sheet
 ## This form will be used by Customer Service Professionals as they call customers. 
 
+### Access
+
+- Admin
+    - Able to edit/add survey questions as needed
+    - Able to edit all questions as needed
+    - Able to retrieve and review all completed call sheets
+    - Able to access overview of all call sheets in progress
+        - Able to sort by customer name, address, business name
+    - Has all abilities of customer service professional as well
+
+- Customer Service Professional
+    - Able to add/edit all answers to questions
+    - Able to save and close (partial success to be completed on call back)
+    - Able to save and submit (complete call sheet)
+
 ### Function
 
 This form should **always** save the customers:
