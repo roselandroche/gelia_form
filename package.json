@@ -1,0 +1,20 @@
+{
+  "name": "gelia_form",
+  "version": "1.0.0",
+  "description": "Survey/Form to collect customer data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roselandroche/gelia_form.git"
+  },
+  "keywords": [],
+  "author": "Rose Landroche",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roselandroche/gelia_form/issues"
+  },
+  "homepage": "https://github.com/roselandroche/gelia_form#readme"
+}
