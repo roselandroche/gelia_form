@@ -11,7 +11,7 @@ server.use(express.json());
 
 // routers here
 
-server.get('/', (req, res, next) => {
+server.get('/', (req, res) => {
     res.json({
         message: 'Sanity check'
     });
