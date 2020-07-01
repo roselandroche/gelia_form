@@ -1,13 +1,13 @@
 require('dotenv').config()
 
 const sqlite3 = {
-  client: sqlite3,
+  client: 'sqlite3',
   useNullAsDefault: true,
   migrations: {
-    directory: './database/migrations',
+    directory: './data/database/migrations',
   },
   seeds: {
-    directory: './database/seeds',
+    directory: './data/database/seeds',
   },
   pool: {
     afterCreate: (conn, done) => {
