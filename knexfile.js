@@ -4,10 +4,10 @@ const sqlite3 = {
   client: 'sqlite3',
   useNullAsDefault: true,
   migrations: {
-    directory: './data/database/migrations',
+    directory: './data/migrations',
   },
   seeds: {
-    directory: './data/database/seeds',
+    directory: './data/seeds',
   },
   pool: {
     afterCreate: (conn, done) => {
