@@ -41,4 +41,32 @@ describe('users router', () => {
             expect(res.message).toBe('Email already exists')
         })
     })
+    describe('log in', () => {
+        it('should log in pre-existing user, return 200', async () => {
+            const res = await supertest(server).post('/login').send({
+                username: 'Rose Smith',
+                password: 'abc123'
+            })
+            expect(res.status).toBe(200);
+            expect(res.type).toBe('application/json')
+        })
+        it('should NOT log in non-existing user, return 401', async () => {
+            const res = await supertest(server).post('/login').send({
+                username: 'Hacker McHackerson',
+                password: 'the-hackiest'
+            })
+            expect(res.status).toBe(401)
+            expect(res.type).toBe('application/json')
+            expect(res.body.message).toBe('Invalid credentials')
+        })
+        it('should return a token on successful log in', async () => {
+            const res = await supertest(server).post('/login').send({
+                username: 'Rose Smith',
+                password: 'abc123'
+            })
+            expect(res.status).toBe(200);
+            expect(res.type).toBe('application/json')
+            expect(res.body.token).toBeTruthy()
+        })
+    })
 })

@@ -29,13 +29,35 @@ router.post('/register', (req, res, next) => {
     }
 })
 
-// router.post('/login', (req, res, next) => {
-//     const { username, password } = req.body
-//     const user = await usersMod.findBy({ username })
+router.post('/login', (req, res, next) => {
+    const { username, password } = req.body
+    const user = await usersMod.findBy({ username })
 
-//     if(!user) {
-//         return
-//     }
-// })
+    if(!user) {
+        return res.status(401).json({
+            message: 'User does not exist'
+        })
+    }
+
+    const passwordValid = await bcrypt.compare(password, user.password)
+
+    if(user && passwordValid) {
+        const token = jwt.sign({
+            subject: user.id,
+            user: user.username,
+        }, secrets.jwt, {
+            expiresIn: '2h'
+        })
+
+        res.status(200).json({
+            message: `Welcome, ${user.username}!`,
+            token: token,
+        })
+    } else {
+        res.status(401).json({
+            message: 'Invalid credentials'
+        })
+    }
+})
 
 module.exports = router;
