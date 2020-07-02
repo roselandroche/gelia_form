@@ -1,4 +1,6 @@
 const express = require('express')
+const usersRouter = require('../data/users/users_router')
+
 const cors = require('cors')
 const helmet = require('helmet')
 // any middleware here
@@ -9,7 +11,7 @@ server.use(cors());
 server.use(helmet());
 server.use(express.json());
 
-// routers here
+server.use('/', usersRouter)
 
 server.get('/', (req, res) => {
     res.json({
