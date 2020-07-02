@@ -29,7 +29,7 @@ router.post('/register', async (req, res, next) => {
     }
 })
 
-router.post('/login', (req, res, next) => {
+router.post('/login', async (req, res, next) => {
     const { username, password } = req.body
     const user = await usersMod.findBy({ username })
 
