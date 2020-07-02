@@ -7,7 +7,7 @@ const db = require('../db_config')
 
 const router = express.Router();
 
-router.post('/register', (req, res, next) => {
+router.post('/register', async (req, res, next) => {
     try {
         const userExists = await usersMod.findBy({ username: req.body.username })
         const emailExists = await usersMod.findBy({ email: req.body.email })
