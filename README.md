@@ -97,7 +97,11 @@ Currently Professionals in this position rely on printed call sheets. These are 
 
 ### Tech Framework
 
-- TBD
+- Node.js
+- Express
+- Knex
+- Sqlite3
+- Supertest
 
 
 MIT © [Rose Landroche]()
